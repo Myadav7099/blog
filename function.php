@@ -2,7 +2,7 @@
 session_start();
 include(__DIR__ . '/connection.php');
 
-$base_url = 'http://localhost:81/app_blog';
+$base_url = 'http://localhost/app_cart';
 
 function getPopulerPost($limit = 8){
     global $connection;

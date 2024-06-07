@@ -3,7 +3,7 @@
 
     $error = [];
     $table = 'users';
-    $url = 'http://localhost:81/app_blog/login.php';
+    $url = 'http://localhost:app_blog/login.php';
 
     $required_fields = ['email' , 'password'];
     foreach($required_fields as $key => $value){
@@ -27,7 +27,7 @@
             $_SESSION['loggedInUserId'] = $data['id'];
             setMessage('success' , 'LoggedIn Successfully');
             
-            $url = 'http://localhost:81/app_blog/home.php';
+            $url = 'http://localhost:app_blog/home.php';
             
         }
         else{             
